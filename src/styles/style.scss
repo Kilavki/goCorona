@@ -1,6 +1,9 @@
 @import "fonts";
 @import "minMin";
+@import "config";
 
 body {
-
+	font-family: $font-stack;
+	color: $font-color;
+	font-size: 12px;
 }
