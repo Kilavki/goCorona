@@ -2,8 +2,25 @@
 @import "minMin";
 @import "config";
 
+[class*="__container"] {
+	min-width: 1057px;
+	margin: 0 auto;
+}
+
 body {
 	font-family: $font-stack;
 	color: $font-color;
 	font-size: 12px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	min-height: 100%;
+	border: 4px solid #000;
+}
+
+.main {
+	flex: 1 1 auto;
 }
