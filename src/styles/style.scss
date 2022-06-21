@@ -1,8 +1,9 @@
 @import "fonts";
 @import "minMin";
 @import "config";
+@import "header";
 
-[class*=__container] {
+[class*="__container"] {
 	max-width: 1057px;
 	margin: 0 auto;
 }
@@ -23,4 +24,30 @@ body {
 
 .main {
 	flex: 1 1 auto;
+}
+
+.button {
+	display: inline-block;
+	padding: 14px 30px;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+
+	color: $font-wite;
+	border-radius: 5px;
+	background-color: $main-color;
+	&:hover {
+		background-color: darken($main-color, 10%);
+	}
+}
+
+.button-blue {
+	background-color: $accent-color;
+	&:hover {
+		background-color: darken($accent-color, 10%);
+	}
 }

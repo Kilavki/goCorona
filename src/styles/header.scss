@@ -1,29 +1,49 @@
 .header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
 
 	&__container {
+		display: flex;
+		min-height: 114px;
+		align-items: center;
 	}
 
 	&__logo {
 	}
 
 	&__menu {
+		flex: 1 1 auto;
 	}
 
 	&__button {
+		display: flex;
+		flex: 0 0 252px;
+		justify-content: flex-end;
 	}
 }
 .menu {
+	display: flex;
+	justify-content: flex-end;
 
 	&__list {
+		display: flex;
 	}
 
 	&__item {
+		margin: 0 40px 0 0;
 	}
 
 	&__link {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 1.2;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: #000;
 	}
-}
-.button {
-}
-.button-blue {
 }
