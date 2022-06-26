@@ -11,18 +11,13 @@
 		align-items: center;
 	}
 
-	@media (max-width: 991.98px) {
-		&__container {
-			min-height: 80px;
-		}
-	}
-
 	&__logo {
 	}
 
 	&__menu {
 		flex: 1 1 auto;
 	}
+
 
 	&__button {
 		display: flex;
@@ -33,6 +28,12 @@
 .menu {
 	display: flex;
 	justify-content: flex-end;
+
+	&__icon {
+	}
+
+	&__body {
+	}
 
 	&__list {
 		display: flex;
@@ -56,6 +57,10 @@
 
 @media (max-width: 991.98px) {
 	.header {
+		&__container {
+			min-height: 80px;
+		}
+
 		&__button {
 			flex: 0 0 170px;
 		}
