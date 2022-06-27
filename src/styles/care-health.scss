@@ -1,0 +1,144 @@
+.care-health {
+	background-color: $bg-color;
+
+	&__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 150px 0 50px 0;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 267px;
+			width: 100vw;
+			height: 100%;
+			transform: translate(100%, 0);
+			border-radius: 30px 0px 0px 30px;
+			background-color: $main-color;
+		}
+	}
+
+	&__content {
+		flex: 0 1 48%;
+		padding: 0 20px;
+	}
+
+	&__block-text {
+		max-width: 410px;
+	}
+
+	&__image {
+		flex: 0 1 52%;
+		position: relative;
+		z-index: 2;
+		border: 1px solid #000;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.block-text {
+	&__title {
+		font-weight: 700;
+		font-size: 44px;
+		line-height: 126%;
+		color: #000;
+		span {
+			color: $main-color;
+		}
+		&:not(:last-child) {
+			margin: 0 0 12px 0;
+		}
+	}
+
+	&__title-blue {
+		span {
+			color: $accent-color;
+		}
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 138.5%;
+		letter-spacing: 0.08em;
+		color: $font-color;
+		&:not(:last-child) {
+			margin: 0 0 24px 0;
+		}
+	}
+
+	&__button {
+	}
+}
+
+.watch-video {
+	padding: 60px 0 0 20px;
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&__icon {
+		margin: 0 12px 0 0;
+		width: 44px;
+		height: 44px;
+	}
+
+	&__content {
+	}
+
+	&__title {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 126%;
+		letter-spacing: 0.08em;
+		color: $light-font-color;
+		&:not(:last-child) {
+			margin: 0 0 5px 0;
+		}
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 9px;
+		line-height: 126%;
+		letter-spacing: 0.165em;
+		text-transform: uppercase;
+		color: #000;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.care-health {
+		&__container {
+			&::before {
+				right: 185px;
+				border-radius: 20px 0px 0px 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.care-health {
+		&__container {
+			&::before {
+				display: none;
+			}
+		}
+		&__content {
+			flex: 1 1 100%;
+		}
+		&__block-text {
+			max-width: none;
+		}
+	}
+}
