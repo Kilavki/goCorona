@@ -33,9 +33,9 @@
 		flex: 0 1 52%;
 		position: relative;
 		z-index: 2;
-		border: 1px solid #000;
+		// border: 1px solid #000;
 		img {
-			width: 100%;
+			max-width: 100%;
 		}
 	}
 }
@@ -78,19 +78,19 @@
 
 .watch-video {
 	padding: 60px 0 0 20px;
+	flex: 1 1 100%;
 
 	&__link {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
 	}
 
 	&__icon {
-		margin: 0 12px 0 0;
-		width: 44px;
-		height: 44px;
+		flex: 0 0 44px;
 	}
 
 	&__content {
+		padding: 0 0 0 12px;
 	}
 
 	&__title {
@@ -130,15 +130,30 @@
 @media (max-width: 767.98px) {
 	.care-health {
 		&__container {
+			padding: 100px 15px 50px 15px;
 			&::before {
 				display: none;
 			}
 		}
 		&__content {
 			flex: 1 1 100%;
+			padding: 0;
 		}
 		&__block-text {
 			max-width: none;
 		}
+		&__image {
+			flex: 1 1 100%;
+			padding: 30px 0;
+			text-align: center;
+		}
+	}
+	.block-text {
+		&__title {
+			font-size: 34px;
+		}
+	}
+	.watch-video {
+		padding: 0;
 	}
 }
