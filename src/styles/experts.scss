@@ -19,6 +19,10 @@
 		padding: 0 20px;
 	}
 
+	&__block-text {
+		max-width: 400px;
+	}
+
 	&__video {
 		position: relative;
 		flex: 0 1 50%;
@@ -37,6 +41,8 @@
 		}
 	}
 }
+
+
 .statistics-experts {
 	position: relative;
 	max-width: 654px;

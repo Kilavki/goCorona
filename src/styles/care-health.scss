@@ -40,41 +40,6 @@
 	}
 }
 
-.block-text {
-	max-width: 400px;
-	&__title {
-		font-weight: 700;
-		font-size: 44px;
-		line-height: 126%;
-		color: #000;
-		span {
-			color: $main-color;
-		}
-		&:not(:last-child) {
-			margin: 0 0 12px 0;
-		}
-	}
-
-	&__title-blue {
-		span {
-			color: $accent-color;
-		}
-	}
-
-	&__text {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 138.5%;
-		letter-spacing: 0.08em;
-		color: $font-color;
-		&:not(:last-child) {
-			margin: 0 0 24px 0;
-		}
-	}
-
-}
-
 .watch-video {
 	padding: 60px 0 0 20px;
 	flex: 1 1 100%;
