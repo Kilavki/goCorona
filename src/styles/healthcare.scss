@@ -6,13 +6,13 @@
 	}
 
 	&__block-text {
-		margin: 0 0 24px 0;
+		margin: 0 0 28px 0;
 	}
 
 	&__block-cards {
-		height: 358px;
 	}
 }
+
 .block-text {
 	&__text-mw {
 		margin: 0 auto;
@@ -21,42 +21,37 @@
 	}
 }
 
-.cards-block-healthcare {
-	&__body {
+.cards-block {
+	display: flex;
+
+	&__column {
 		position: relative;
-		width: 100%;
-		height: 100%;
-		padding: 0 0 0 34px;
+		padding: 34px 40px;
+		flex: 0 1 33.333%;
 	}
-	&__content {
-		position: relative;
-		display: flex;
-		align-items: center;
-		height: 100%;
-		z-index: 1;
+
+	&__card {
+		padding: 36px 25px;
 	}
 }
 
-.healthcare-card {
-	margin: 0 72px 0 0;
-	width: 278.17px;
-	height: 276.52px;
-	padding: 36px 26px;
+.card {
+	position: relative;
+	width: 278px;
+	height: 276px;
+	text-align: center;
 	border-radius: 8px;
 	background: #ffffff;
 	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
-	// z-index: 1;
-	&:last-child {
-		margin: 0;
-	}
+	z-index: 1;
 
 	&__icon {
 		margin: 0 0 58px 0;
+	}
+
+	&__icon-image {
+		width: auto;
 		height: 72px;
-		svg {
-			width: 100%;
-			height: 100%;
-		}
 	}
 
 	&__title {
@@ -65,7 +60,6 @@
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 138.5%;
-		text-align: center;
 		letter-spacing: 0.08em;
 		color: #000;
 	}
@@ -75,45 +69,54 @@
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 138.5%;
-		text-align: center;
 		letter-spacing: 0.08em;
 	}
+}
 
-	&__decor {
+.column-decor {
+	&::before,
+	&::after {
+		content: "";
 		position: absolute;
-		width: 65px;
-		height: 65px;
 		border-radius: 16px;
-		background-color: $main-color;
+		background: $main-color;
 	}
-	
-	&__decor-1 {
+}
+
+.column-decor-1 {
+	&::after {
 		left: 16px;
-		bottom: 6px;
+		bottom: 0px;
+		width: 66px;
+		height: 66px;
 		transform: rotate(-30deg);
 	}
-
-	&__decor-2 {
-		top: 82px;
-		left: 266px;
+	&::before {
+		top: 72px;
+		right: -8px;
 		width: 96px;
 		height: 96px;
 		border-radius: 30px;
 		transform: rotate(105deg);
 	}
+}
 
-	&__decor-3 {
-		right: 336px;
-		bottom: 17px;
+.column-decor-2 {
+	&::before {
+		right: -40px;
+		bottom: 0;
 		width: 127px;
 		height: 127px;
 		border-radius: 30px;
 		transform: rotate(-30deg);
 	}
-
-	&__decor-4 {
-		top: 6px;
-		right: 44px;
+}
+.column-decor-3 {
+	&::before {
+		top: 2px;
+		right: 26px;
+		width:66px;
+		height:66px;
 		transform: rotate(-30deg);
 	}
 }
