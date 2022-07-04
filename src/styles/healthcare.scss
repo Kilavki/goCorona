@@ -1,0 +1,119 @@
+.healthcare {
+	padding: 80px 0 75px 0;
+	// background-color: #ff0066;
+
+	&__container {
+	}
+
+	&__block-text {
+		margin: 0 0 24px 0;
+	}
+
+	&__block-cards {
+		height: 358px;
+	}
+}
+.block-text {
+	&__text-mw {
+		margin: 0 auto;
+		max-width: 600px;
+		text-align: center;
+	}
+}
+
+.cards-block-healthcare {
+	&__body {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 0 0 0 34px;
+	}
+	&__content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		z-index: 1;
+	}
+}
+
+.healthcare-card {
+	margin: 0 72px 0 0;
+	width: 278.17px;
+	height: 276.52px;
+	padding: 36px 26px;
+	border-radius: 8px;
+	background: #ffffff;
+	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	// z-index: 1;
+	&:last-child {
+		margin: 0;
+	}
+
+	&__icon {
+		margin: 0 0 58px 0;
+		height: 72px;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__title {
+		margin: 0 0 4px 0;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 138.5%;
+		text-align: center;
+		letter-spacing: 0.08em;
+		color: #000;
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 138.5%;
+		text-align: center;
+		letter-spacing: 0.08em;
+	}
+
+	&__decor {
+		position: absolute;
+		width: 65px;
+		height: 65px;
+		border-radius: 16px;
+		background-color: $main-color;
+	}
+	
+	&__decor-1 {
+		left: 16px;
+		bottom: 6px;
+		transform: rotate(-30deg);
+	}
+
+	&__decor-2 {
+		top: 82px;
+		left: 266px;
+		width: 96px;
+		height: 96px;
+		border-radius: 30px;
+		transform: rotate(105deg);
+	}
+
+	&__decor-3 {
+		right: 336px;
+		bottom: 17px;
+		width: 127px;
+		height: 127px;
+		border-radius: 30px;
+		transform: rotate(-30deg);
+	}
+
+	&__decor-4 {
+		top: 6px;
+		right: 44px;
+		transform: rotate(-30deg);
+	}
+}
