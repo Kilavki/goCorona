@@ -29,6 +29,7 @@
 	}
 
 	&__card {
+		
 	}
 }
 
@@ -131,6 +132,8 @@
 		padding: 40px 0 30px 0;
 		&__block-cards {
 			flex-direction: column;
+			width: 80vw;
+			margin: 0 auto;
 		}
 	}
 
@@ -139,4 +142,5 @@
 			padding: 15px;
 		}
 	}
+
 }
