@@ -63,6 +63,8 @@
 
 @media (max-width: 991.98px) {
 	.header {
+		position: fixed;
+		
 		&__container {
 			min-height: 80px;
 		}
