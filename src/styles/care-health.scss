@@ -104,7 +104,6 @@
 			padding: 0;
 		}
 		&__block-text {
-			max-width: none;
 		}
 		&__image {
 			flex: 1 1 100%;
@@ -113,6 +112,7 @@
 		}
 	}
 	.block-text {
+		max-width: none;
 		&__title {
 			font-size: 34px;
 		}
