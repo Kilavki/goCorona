@@ -17,6 +17,9 @@ body {
 	font-family: $font-stack !important;
 	color: $font-color;
 	font-size: 12px;
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
