@@ -12,9 +12,22 @@
 	}
 
 	&__item {
-		margin-right: 57px;
+		margin:0 56px 0 0;
+		&:last-child {
+			margin: 0;
+		}
 	}
-	&:last-child {
-		margin-left: 0;
+}
+
+
+@media (max-width: 479.98px) {
+	.footer {
+		padding: 10px 0 20px 0;
+		&__items {
+			flex-direction: column;
+		}
+		&__item {
+			margin: 0 0 10px 0;
+		}
 	}
 }
