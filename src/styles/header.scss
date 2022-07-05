@@ -13,6 +13,7 @@
 
 	&__logo {
 		position: relative;
+		padding: 0 0 0 15px;
 		z-index: 5;
 	}
 
@@ -64,7 +65,7 @@
 @media (max-width: 991.98px) {
 	.header {
 		position: fixed;
-		
+
 		&__container {
 			min-height: 80px;
 		}
@@ -186,7 +187,7 @@
 @media (max-width: 479.98px) {
 	.header {
 		&__logo {
-			flex: 0 0 40px;
+			flex: 0 0 55px;
 			overflow: hidden;
 		}
 	}
