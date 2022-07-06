@@ -7,7 +7,39 @@ flsFunctions.isWebp();
 // const swiper = new Swiper(...);
 
 
+// Код для определения устройства на котором открыта страница
+const isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOs: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOs() ||
+			isMobile.Opera() ||
+			isMobile.Windows());
+	}
+};
 
+// Проверяем устройство и добавляем соответствующий класс
+if (isMobile.any()) {
+	document.body.classList.add('_touch');
+} else {
+	document.body.classList.add('_pc');
+}
 
 
 // Бургер
@@ -35,9 +67,12 @@ if (menuLinks.length > 0) {
 
 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			console.log(gotoBlock);
 
-			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageXOffset - document.querySelector('.header').offsetHeight;
-			console.log(gotoBlockValue);
+			const gotoBlockValue = (document.body.classList.contains('_touch')) ?
+				gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header').offsetHeight :
+				gotoBlock.getBoundingClientRect().top + pageYOffset;
+
 
 			if (iconMenu.classList.contains('_active')) {
 				document.body.classList.remove('_lock');
