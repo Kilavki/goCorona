@@ -45,7 +45,7 @@
 	flex: 1 1 100%;
 
 	&__link {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 	}
 
@@ -58,6 +58,7 @@
 	}
 
 	&__title {
+		width: max-content;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 13px;
