@@ -10,14 +10,17 @@
     "spriteSvg": "gulp spriteSvg",
     "fonts": "gulp fonts",
     "zip": "gulp deployZip --build",
-    "deploy": "gulp deployFTP --build"
+    "deploy": "gulp deployFTP --build",
+    "gh-deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "kilavki",
   "license": "ISC",
+  "homepage": "git@github.com:Kilavki/goCorona.git",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
